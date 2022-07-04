@@ -9,9 +9,14 @@
 <body>
     
 <?php
-$txt="ornek txt verisi";
-echo "txt length = ".strlen($txt);
-
+$txt="string example";
+echo "txt: ".$txt."<br>";
+echo "length = ".strlen($txt)."<br>";
+echo "word count = ".str_word_count($txt)."<br>";
+echo "reverse = ".strrev($txt)."<br>";
+echo "find word: ".strpos($txt,"example")."<br>";
+echo "replace: ".str_replace("example","example1",$txt);
+//string ifade örnekleri
 
 ?>
 </body>
