@@ -9,29 +9,25 @@
 <body>
     
 <?php
-$color="blue";
-echo "ana sayfa <br>";
-ECHO "ana sayfa1 <br>";
-echo "renk= $color <br>";
-
-//yorumsatiri1
-#yorumsatiri2
-/* yorum
-satiri3
-*/
 $txt = "txt variable";
-$x = 5 /* +10 */ +5;
-$y = 20;
-$z = 30;
-echo $x."<br>";
-echo $y."<br>";
-echo $z."<br>";
-echo "variable name= $txt"."<br>";
+$x = 50;
+$y = 5;
+$z = 10;
 echo "x= ".$x."<br>";
 echo "y= ".$y."<br>";
 echo "z= ".$z."<br>";
-echo "x + y = $x + $y = ". $x + $y."<br>";
-echo strlen($txt);
+echo "x + y = $x + $y + $z = ". $x + $y + $z."<br>";
+echo "x - y = $x - $y = ". $x - $y."<br>";
+echo "x * y = $x * $y = ". $x * $y."<br>";
+echo "x / y = $x / $y = ". $x / $y."<br>";
+echo "x - z = $x - $z = ". $x - $z."<br>";
+echo "x * z = $x * $z = ". $x * $z."<br>";
+echo "x / z = $x / $z = ". $x / $z."<br>";
+
+/*x,y,z değişkenlerini tanımla ve ekrana yazdır
+x,y ve x,z ile işlemler yap ve ekrana yazdır
+*/
+
 ?>
 
 </body>
