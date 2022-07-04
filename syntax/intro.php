@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 <?php
 $txt = "txt variable";
 $x = 50;
@@ -23,6 +23,8 @@ echo "x / y = $x / $y = ". $x / $y."<br>";
 echo "x - z = $x - $z = ". $x - $z."<br>";
 echo "x * z = $x * $z = ". $x * $z."<br>";
 echo "x / z = $x / $z = ". $x / $z."<br>";
+echo "x % y = $x % $y = ". $x % $y."<br>";
+echo "y ** z = $y ** $z = ". $y ** $z."<br>";
 
 /*x,y,z değişkenlerini tanımla ve ekrana yazdır
 x,y ve x,z ile işlemler yap ve ekrana yazdır
