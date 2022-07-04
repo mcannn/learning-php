@@ -17,7 +17,6 @@ echo "reverse = ".strrev($txt)."<br>";
 echo "find word: ".strpos($txt,"example")."<br>";
 echo "replace: ".str_replace("example","example1",$txt);
 //string ifade örnekleri
-
 ?>
 </body>
 </html>
