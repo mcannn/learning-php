@@ -16,7 +16,7 @@ function ornek(){
     $y=$y+6;
     echo " ornek x degiskeni:   ".$GLOBALS['x']."<br>";
     echo " ornek y degiskeni: ".$y;
-    
+    // comment line
     
 }
 for($i=0;$i<10;$i++)
