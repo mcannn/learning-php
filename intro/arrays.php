@@ -46,6 +46,7 @@ $arrlength = count($sayilar);
 for($x = 0; $x < $arrlength; $x++) {
   echo $sayilar[$x].",";
 }
+
 echo "<br>";
 //küçükten büyüğe sırala
 sort($sayilar);
@@ -53,6 +54,7 @@ $arrlength = count($sayilar);
 for($x = 0; $x < $arrlength; $x++) {
   echo $sayilar[$x].",";
 }
+
 echo "<br>";
 //büyükten küçüğe sırala
 rsort($sayilar);
