@@ -10,11 +10,17 @@
     
 <?php
 $txt="string example";
+// txt değerini yazdır
 echo "txt: ".$txt."<br>";
-echo "length = ".strlen($txt)."<br>";
+//ifade içindeki karakter sayısı
+echo "length = ".strlen($txt)."<br>"; 
+//ifade içindeki kelime sayısı
 echo "word count = ".str_word_count($txt)."<br>";
+//ifadeyi ters çevir
 echo "reverse = ".strrev($txt)."<br>";
+//istenen kelimeyi bul
 echo "find word: ".strpos($txt,"example")."<br>";
+//kelime bul ve değiştir
 echo "replace: ".str_replace("example","example1",$txt);
 //string ifade örnekleri
 ?>
