@@ -22,6 +22,19 @@ Sınıf: <br>
 4.Sınıf<input type="radio" name="sınıf" value="4"><br><br>
 
 Cinsiyet:<br>
+Erkek
+<input type="radio" name="Cinsiyet"
+<?php if(isset($cinsiyet) && $cinsiyet=="erkek") echo "checked"; ?>
+value="erkek"><br>
+Kadın
+<input type="radio" name="Cinsiyet"
+<?php if(isset($cinsiyet) && $cinsiyet=="kadın") echo "checked"; ?>
+value="kadın"><br>
+
+Diğer
+<input type="radio" name="Cinsiyet"
+<?php if(isset($cinsiyet) && $cinsiyet=="diger") echo "checked"; ?>
+value="diger"><br>
 
 <input type="submit"><br>
 
