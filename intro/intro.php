@@ -9,6 +9,7 @@
 <body>
 
 <?php
+
 $txt = "txt variable";
 $x = 50;
 $y = 5;
