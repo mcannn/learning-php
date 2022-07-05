@@ -14,12 +14,15 @@ $b=10;
 if($b>$a){
     echo "b>a";
 }
+
 elseif($b<$a){
     echo "b<a";
 }
+
 else{
     echo "a=b";
 }
+
 /* b>a ise b>a yazdır
 b<a ise b<a yazdır
 ikisi de değilse a=b yazdır

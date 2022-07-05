@@ -25,10 +25,12 @@ $colors3 = array(
     array("green",4,5,6),
     array("blue",7,8,9),
   );
+  
 //colors dizisini ekrana yazdır
 echo $colors[0]."<br>";
 echo $colors[1]."<br>";
 echo $colors[2]."<br>";
+
 //eleman sayısını bul
 echo "eleman miktarı = ".count($colors)."<br>";
 

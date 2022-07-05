@@ -16,7 +16,6 @@ $y=40;
 function toplam(){
     $GLOBALS['z'] = $GLOBALS['x'] +$GLOBALS['y'];
 }
-
 toplam();
 echo $z;
 

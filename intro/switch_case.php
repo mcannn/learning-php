@@ -24,6 +24,7 @@ switch ($a) {
     default:
       echo "girilen sayi 5, 10 , 15 değil";
   }
+  
 /* $a degeri 5 ise ekrana 5 yazdır
 $a degeri 10 ise ekrana 10 yazdır
 $a degeri 15 ise ekrana 15 yazdır

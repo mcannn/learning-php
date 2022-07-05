@@ -21,7 +21,6 @@ function ekle($x){
     $x+=5;
     return (int) ($x);
 }
-
 $y=30;
 echo ekle($y);
 
