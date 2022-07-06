@@ -9,8 +9,6 @@
 <body>
     
 <?php
-
-/*
 //meyveler adında class oluşturduk
 class Meyveler{
     //isim ve renk değişkenleri tanımladık
@@ -25,38 +23,19 @@ class Meyveler{
         return $this->name;
     }
 }
+//nesneleri ekledik
 $muz = new Meyveler();
 $kiraz = new Meyveler();
 $armut = new Meyveler();
-
 $muz->set_name('MUZ');
 $kiraz->set_name('KİRAZ');
 $armut->set_name('ARMUT');
-
+//nesneleri geri çağırıp ekrana yazdırdık
 echo $muz->get_name()."<br>";
 echo $kiraz->get_name()."<br>";
 echo $armut->get_name()."<br>";
-*/
-
-class Doviz{
-    public $deger;
-
-    function set_name($name){
-        $this->name = $name;
-    }
-
-    function get_name(){
-        return $this->name;
-    }
-}
-$dolar=new Doviz;
-$euro=new Doviz;
-$pound=new Doviz;
-
-$dolar->deger=17.13;
-$euro->deger=17.58;
-$pound->deger=20.46;
 
 ?>
+
 </body>
 </html>
