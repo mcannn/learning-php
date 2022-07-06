@@ -47,12 +47,14 @@ $numara2 = new Gorevli("furkan","40","5500");
 $numara3 = new Gorevli("yusuf","45","6000");
 $numara4 = new Gorevli("yasin","50","6500");
 $numara5 = new Gorevli("talha","55","7000");
+
 //bilgileri görüntüle
 $numara1->bilgiler();
 $numara2->bilgiler();
 $numara3->bilgiler();
 $numara4->bilgiler();
 $numara5->bilgiler();
+
 /* destruct ile ve normal fonksiyon ile 
 olmak üzere toplamda 2 kere yazdırma 
 işlemi yaptırdık.
