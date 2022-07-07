@@ -18,5 +18,7 @@
 <input type="radio" name="islem" value="bol" style="height:15px; width:15px; vertical-align: middle;"> BÖLME İŞLEMİ (1.Sayı ÷ 2.Sayı)<br><br>
 <button type="submit"> HESAPLA </button>
 </form>
+<?php
+?>
 </body>
 </html>
