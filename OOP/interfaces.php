@@ -9,12 +9,12 @@
 <body>
 
 <?php
-
+//interface tanımla
 interface Vehicle{
     public function topSpeed();
     public function driverLicense();
 }
-
+//Vehicle interface üzerinden Automobile sınıfına implement tanımla 
 class Automobile implements Vehicle{
     public function topSpeed(){
         echo "Arabanın en yüksek hızı: 260 km/s dir.<br>";
@@ -23,6 +23,7 @@ class Automobile implements Vehicle{
         echo "Araba sürebilmek için B sınıfı ehliyet gerekir.<br>";
     }
 }
+//Vehicle interface üzerinden Minibus sınıfına implement tanımla 
 class Minibus implements Vehicle{
     public function topSpeed(){
         echo "Minibüs en yüksek hızı: 160 km/s dir.<br>";
@@ -31,6 +32,7 @@ class Minibus implements Vehicle{
         echo "Minibüs sürebilmek için D1 sınıfı ehliyet gerekir.<br>";
     }
 }
+//Vehicle interface üzerinden Bus sınıfına implement tanımla 
 class Bus implements Vehicle{
     public function topSpeed(){
         echo "Otobüsün en yüksek hızı: 120 km/s dir.<br>";
@@ -39,6 +41,7 @@ class Bus implements Vehicle{
         echo "Otobüs sürebilmek için D sınıfı ehliyet gerekir.<br>";
     }
 }
+//Vehicle interface üzerinden Truck sınıfına implement tanımla 
 class Truck implements Vehicle{
     public function topSpeed(){
         echo "Kamyonun en yüksek hızı: 100 km/s dir.<br>";
@@ -47,11 +50,12 @@ class Truck implements Vehicle{
         echo "Kamyon sürebilmek için C sınıfı ehliyet gerekir.<br>";
     }
 }
+//değişkenleri tanımla
 $car = new Automobile();
 $minibus = new Minibus();
 $bus = new Bus();
 $truck = new Truck();
- 
+//bilgileri ekrana yazdır
 $car->topSpeed();
 $car->driverLicense();
 echo "<br>";
@@ -64,7 +68,6 @@ echo "<br>";
 $truck->topSpeed();
 $truck->driverLicense();
 echo "<br>";
-
 ?>
     
 </body>
