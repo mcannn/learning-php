@@ -16,7 +16,7 @@
 <input type="radio" name="islem" value="cikar" style="height:15px; width:15px; vertical-align: middle;"> ÇIKARMA İŞLEMİ (1.Sayı - 2.Sayı)<br>
 <input type="radio" name="islem" value="carp" style="height:15px; width:15px; vertical-align: middle;"> ÇARPMA İŞLEMİ (1.Sayı x 2.Sayı)<br>
 <input type="radio" name="islem" value="bol" style="height:15px; width:15px; vertical-align: middle;"> BÖLME İŞLEMİ (1.Sayı ÷ 2.Sayı)<br><br>
-<button type="submit">HESAPLA</button>
+<button type="submit"> HESAPLA </button>
 </form>
 </body>
 </html>
