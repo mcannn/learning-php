@@ -29,7 +29,7 @@ function dört($str){
 function ekranayaz($str,$format){
     echo $format($str);
 }
-//fonksiyon değerlerini ekrana yazdır
+//fonksiyon değerlerini ekrana yaz
 ekranayaz("satır numarası: ","bir");
 echo "<br>";
 ekranayaz("satır numarası: ","iki");
