@@ -12,6 +12,15 @@
     CREATE DATABASE : MySQL sunucusuna yeni bir database ekleme / oluşturma için kullanılır.
     CREATE TABLE : MySQL sunucusuna yeni bir database içerisine yeni bir tablo ekleme / oluşturma için kullanılır.
     Ayrıca istenirse herhangi bir tablo içeriğini başka bir tabloya kopyalamak için de kullanılabilir.
+    
+    database oluşturma
+    $sorgu = $veritabaniBaglantisi->query("CREATE DATABASE test1 ");
+
+    if($sorgu){
+        echo "database oluşturuldu";
+    }else{
+        echo "sorgu hatası";
+    }
     */
     try{
         $veritabaniBaglantisi = new PDO("mysql:host=localhost;dbname=test;charset=UTF8","root","");
@@ -21,15 +30,6 @@
         echo "hata açıklaması: ". $hata -> getMessage();
         die();
     }
-    /*database oluşturma
-    $sorgu = $veritabaniBaglantisi->query("CREATE DATABASE test1 ");
-
-    if($sorgu){
-        echo "database oluşturuldu";
-    }else{
-        echo "sorgu hatası";
-    }
-    */
     $sorgu = $veritabaniBaglantisi->exec("CREATE TABLE ornek(
         id int(10) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
         isim varchar(25) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
