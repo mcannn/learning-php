@@ -49,6 +49,9 @@
 
     rowCount() : Herhangi bir tablonun toplam kayıt sayısını bulmak için veya
     işlem yapıldığında etkilenen kayıt sayısını bulmak için kullanılır.
+    
+    lastInsertId() Herhangi bir tabloya yeni kayıt eklendiğinde, 
+    eklenen son kaydın id değerini veya verisini bulmak için kullanılır.
     */
     try{
         $veritabaniBaglantisi = new PDO("mysql:host=localhost;dbname=test;charset=UTF8","root","");

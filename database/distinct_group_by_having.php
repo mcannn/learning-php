@@ -12,8 +12,10 @@
     DISTINCT : Herhangi bir tablonun verilerini okuma işlemi sırasında
     belirtilecek olan sütuna ait tekrar eden verilerin sadece ilkini
     işleme dahil eder diğerlerini işlem dışında bırakır.
+
     GROUP BY : Herhangi bir tablonun verilerini okuma işlemi sırasında
     belirtilecek olan sütuna ait tekrar eden verilerin gruplandırılmasını sağlar.
+    
     HAVING : Herhangi bir tablonun verilerini okuma işlemi sırasında
     belirtilecek olan sütuna ait tekrar eden verilerin GROUP BY ifadesi ile 
     gruplandırılması sırasında koşul veya koşullar tanımlamak için kullanılır.
