@@ -38,11 +38,14 @@
     LIMIT : Herhangi bir tablonun işlem esnasında tüm verilerini işlemek yerine 
     sadece belirtilen adet veya aralıklar kadar işlemek istenildiğini belirtmek için kullanılır.
 
-    ORDER BY : Herhangi bir tablonun verilerine işlem esnasında hangi sıra 
+    ORDER BY : Herhangi bir tablonun verilerine işlem esnasında hangi sıra
     veya sıralar dahilinde erişileceğini belirtmek için kullanılır.
     
-    WHERE : Herhangi bir tablonun işlem esnasında tüm verilerini işlemek 
+    WHERE : Herhangi bir tablonun işlem esnasında tüm verilerini işlemek
     yerine sadece koşula bağlı verilerin işlemek istenildiğini belirtir.
+
+    rowCount() : Herhangi bir tablonun toplam kayıt sayısını bulmak için veya
+    işlem yapıldığında etkilenen kayıt sayısını bulmak için kullanılır.
     */
     try{
         $veritabaniBaglantisi = new PDO("mysql:host=localhost;dbname=test;charset=UTF8","root","");
