@@ -44,6 +44,9 @@
     WHERE : Herhangi bir tablonun işlem esnasında tüm verilerini işlemek
     yerine sadece koşula bağlı verilerin işlemek istenildiğini belirtir.
 
+    INSERT INTO : Herhangi bir tabloya yeni bir kayıt satırı ile birlikte 
+    verisi veya verilerini de eklemek için kullanılır.
+
     rowCount() : Herhangi bir tablonun toplam kayıt sayısını bulmak için veya
     işlem yapıldığında etkilenen kayıt sayısını bulmak için kullanılır.
     */
