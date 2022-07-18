@@ -11,8 +11,11 @@
     /*
     RENAME : MySQL sunucusundaki database içerisinde bulunan herhangi bir tablonun adını güncellemek için kullanılır.
     Ayrıca istenirse herhangi bir tabloyu içinde bulunduğu database den başka bir database e taşımak için kullanılır
+    
     DROP DATABASE : MySQL sunucusu içerisinde bulunan herhangi bir database i silmek için kullanılır.
+    
     DROP TABLE : MySQL sunucusundaki database içerisinde bulunan herhangi bir tabloyu silmek için kullanılır.
+    
     ALTER TABLE : MySQL sunucusundaki database içerisinde bulunan herhangi bir tabloya yeni bir sütun eklenebileceğini, 
     silinebileceğini, tablo adının veya yapısının değiştirileceğini belirtmek için kullanılır.
     
@@ -47,6 +50,12 @@
     INSERT INTO : Herhangi bir tabloya yeni bir kayıt satırı ile birlikte 
     verisi veya verilerini de eklemek için kullanılır.
 
+    UPDATE : Herhangi bir tablonun herhangi bir kaydı içeren satırındaki
+    sütuna veya sütunlara ait verileri güncellemek için kullanılır.
+
+    DELETE : Herhangi bir tablonun herhangi bir kaydı içeren satırını
+    silmek için kullanılır.
+     
     rowCount() : Herhangi bir tablonun toplam kayıt sayısını bulmak için veya
     işlem yapıldığında etkilenen kayıt sayısını bulmak için kullanılır.
     
