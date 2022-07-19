@@ -16,21 +16,24 @@
     setcookie() ile çerezler bir kere oluşturulduktan sonra yaşam süresi
     hakkında bilgi verilmezse tarayıcı kapatılana kadar depolanır
     tarayıcı kapatıldıktan sonra temizlenir.
+    isset() : çerezin bulunma durumunu kontrol eder.
+    (isset($_COOKIE["user"]) şeklinde kullanılır.
     */
     $ttl = time()+3600/*saniye cinsinden değer girilir*/;
     //çerez oluştur
-    setcookie("username","Mehmet",$ttl);
-    setcookie("password","123456",$ttl);
-    //eğer çerez varsa ekrana yazdır
-    if(isset($_COOKIE["username"])){
-        echo "kullanici adi : ".$_COOKIE["username"]."<br>";
-    }
-    if(isset($_COOKIE["password"])){
-        echo "şifre : ".$_COOKIE["password"]."<br>";
-    }
+    setcookie("user[name]","Mehmet",$ttl);
+    setcookie("user[age]","30",$ttl);
+    setcookie("user[password]","123456",$ttl);
+    setcookie("shoppingCart[price]","250₺",$ttl);
+    setcookie("shoppingCart[method]","credit cart",$ttl);
+    //çerezleri ekrana yazdır
+    print_r($_COOKIE["user"]);
+    echo "<br>";
+    print_r($_COOKIE["shoppingCart"]);
+    echo "<br>";
     //çerezleri sil
-    setcookie("username","",0);
-    setcookie("password","",0);
+    /*setcookie("username","",0);
+    setcookie("password","",0);*/
     ?>   
 </body>
 </html>
