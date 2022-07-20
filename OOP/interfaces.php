@@ -7,8 +7,9 @@
     <title>Araç Bilgileri</title>
 </head>
 <body>
-
 <?php
+/*
+//ÖRNEK1
 //interface tanımla
 interface Vehicle{
     public function topSpeed();
@@ -68,7 +69,38 @@ echo "<br>";
 $truck->topSpeed();
 $truck->driverLicense();
 echo "<br>";
+*/
+//ÖRNEK2
+interface Ornek{
+    public function Olustur($deger);
+    public function Oku($deger);
+    public function Degistir($deger);
+}
+abstract class Tema{
+    abstract public function Header($arkaplan, $logo, $banner);
+    abstract public function Body($icerik);
+    abstract public function Footer($metin);
+    public function Olustur($deger){
+
+    }
+    public function Oku($deger){
+
+    }
+    public function Degistir($deger){
+
+    }
+}
+class Alan extends Tema{
+    public function Header($arkaplan, $logo, $banner){
+
+    }
+    public function Body($icerik){
+
+    }
+    public function Footer($metin){
+
+    }
+}
 ?>
-    
 </body>
 </html>

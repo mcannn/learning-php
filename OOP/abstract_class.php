@@ -8,6 +8,8 @@
 </head>
 <body>
 <?php
+/*
+//ÖRNEK1
 //animals adında bir abstract class oluştur
 abstract class Animals{
     public $isim;
@@ -41,6 +43,24 @@ $köpek = new Dog("DOG");
 echo $köpek ->Animal()."<br>";
 $balık =new Fish("FISH");
 echo $balık->Animal()."<br>";
+*/
+//ÖRNEK2
+abstract class Tema{
+    abstract public function Header($arkaplan, $logo, $banner);
+    abstract public function Body($icerik);
+    abstract public function Footer($metin);
+}
+class UstAlan extends Tema{
+    public function Header($a, $b, $c){
+
+    }
+    public function Body($d){
+
+    }
+    public function Footer($e){
+
+    }
+}
 ?> 
 </body>
 </html>
