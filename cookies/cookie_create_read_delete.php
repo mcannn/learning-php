@@ -32,8 +32,11 @@
     print_r($_COOKIE["shoppingCart"]);
     echo "<br>";
     //çerezleri sil
-    /*setcookie("username","",0);
-    setcookie("password","",0);*/
+    /*setcookie("user[name]","",0);
+    setcookie("user[age]","",0);
+    setcookie("user[password]","",0);
+    setcookie("shoppingCart[price]","",0);
+    setcookie("shoppingCart[method]","",0);*/
     ?>   
 </body>
 </html>
