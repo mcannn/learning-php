@@ -54,10 +54,10 @@ class UstAlan extends Tema{
     public function Header($a, $b, $c){
 
     }
-    public function Body($d){
+    public function Body($x){
 
     }
-    public function Footer($e){
+    public function Footer($y){
 
     }
 }
