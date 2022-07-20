@@ -53,6 +53,13 @@
         echo "Adres : " .$GelenAdres. "<br>";
         echo "Sınıf : " .$GelenSınıf. "<br>";
         echo "Cinsiyet : " .$GelenCinsiyet. "<br>";
+        /*
+        //Dizi şeklinde görüntüle
+        $GelenVeriler = $_POST;
+        echo "<pre>";
+        print_r($GelenVeriler);
+        echo "</pre>";
+        */
     }
     ?>
 </body>
