@@ -13,5 +13,5 @@ if(empty($_POST["isim"])){
 }
 ?>
 <br>
-<a href="cookie_form.php"><input type="submit" value="Önceki Sayfaya Dön"></a><br><br>
+<a href="cookie_form1.php"><input type="submit" value="Önceki Sayfaya Dön"></a><br><br>
 <a href="cookie_form3.php"><input type="submit" value="Eklenen çerez verisini göster"></a><br>
