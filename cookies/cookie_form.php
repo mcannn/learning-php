@@ -12,5 +12,7 @@
 İsim Giriniz: <input type="text" name="isim"><br><br>
 Numara Giriniz: <input type="text" name="numara"><br><br>
 <input type="submit" value="Gönder">
+<?php
+?>
 </body>
 </html>
