@@ -25,8 +25,6 @@ if(empty($_POST["isim"])){
     echo "Merhaba " . $Gelenİsim . ". Sisteme giriş yaptınız.<br><br>";
     echo "<a href='session_form3.php'><input type='submit' value='ÇIKIŞ YAP'></a><br><br>";
 }
-?>
-<br>
-
+    ?>
 </body>
 </html>

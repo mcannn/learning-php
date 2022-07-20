@@ -15,6 +15,5 @@ session_start();
     echo "Sistemden çıkış yapıldı.<br><br>";
     echo "<a href='session_form1.php'><input type='submit' value='GİRİŞ SAYFASINA DÖN'></a>";
     ?>
-    
 </body>
 </html>
