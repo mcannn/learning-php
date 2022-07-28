@@ -21,7 +21,9 @@
         Kullanıcı Adı Giriniz: <input type='text' name='yeniusername'><br><br>
         Şifre Giriniz: <input type='password' name='yenipasswrd'><br><br>
         <input type='submit' value='YENİ ÜYE EKLE'>
-        </form><br> <a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
+        </form><br>
+        <a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>
+        <a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
     }else{
         $GelenYeniUsername = $_POST["yeniusername"];
         $GelenYeniPasswrd = $_POST["yenipasswrd"];
@@ -30,23 +32,27 @@
             echo "<a href='database_login2.php'><input type='submit' value='TEKRAR DENE'></a><br>";
         }else{
             $sorgu = $veritabaniBaglantisi->query("SELECT * FROM uye_listesi",PDO::FETCH_ASSOC);
-            $sayi =$sorgu->rowCount();
+            $sayi =$sorgu->rowCount()+1;
             $sorgu1=$veritabaniBaglantisi->query("SELECT * FROM uye_listesi WHERE username='$GelenYeniUsername'",PDO::FETCH_ASSOC);
             $sayi1 =$sorgu1->rowCount();
             if($sayi1){
                 echo "<h3>Aynı kullanıcı adında bir üye mevcut!!<br>Lütfen farklı bir kullanıcı adı giriniz!!</h3>";
+                echo "<a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>";
                 echo "<a href='database_login2.php'><input type='submit' value='TEKRAR DENE'></a><br><br>";
                 echo "<a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
             }else{
                 $ekle = $veritabaniBaglantisi->query("INSERT INTO uye_listesi(id, username, passwrd) 
-                VALUES('$sayi+1', '$GelenYeniUsername', '$GelenYeniPasswrd')");
+                VALUES('$sayi', '$GelenYeniUsername', '$GelenYeniPasswrd')");
                 if($ekle){
-                    echo "<h3>Yeni üye başarıyla eklendi.<h3>";
+                    echo "<h3>Yeni üye başarıyla eklendi.</h3>";
+                    echo "<a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>";
                     echo "<a href='database_login2.php'><input type='submit' value='YENİ ÜYE EKLE'></a><br><br>";
                     echo "<a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
                 }else{
-                    echo "ekleme sıasında hata oluştu";
-                }
+                    echo "<h3>Üye Ekleme Sırasında Bir Hata Oluştu</h3>";
+                    echo "<a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>";
+                    echo "<a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
+                }   
             }
         }
     }

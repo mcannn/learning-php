@@ -30,7 +30,7 @@
         }else{
             $sorgu = $veritabaniBaglantisi->query("SELECT * FROM uye_listesi WHERE username='$GelenUsername' && passwrd='$GelenPassword'",PDO::FETCH_ASSOC);
             if($sorgu->rowCount()){
-                echo "<h3>Panele Hoşgeldiniz  " . $GelenUsername."<br>". "Sisteme başarıyla giriş yaptınız</h3>";
+                echo "<h3>Panele Hoşgeldiniz  " .$GelenUsername."<br>". "Sisteme başarıyla giriş yaptınız</h3>";
                 echo "<a href='database_login2.php'><input type='submit' value='YENİ ÜYE EKLE'></a><br><br>";
                 echo "<a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br><br>";
             }else{
