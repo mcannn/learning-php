@@ -18,8 +18,8 @@
     if(!$_POST){
         echo "<form action='database_login2.php' method='post'>
         <h2>--YENİ ÜYE BİLGİLERİ--</h2>
-        Kullanıcı Adı Giriniz: <input type='text' name='yeniusername'><br><br>
-        Şifre Giriniz: <input type='password' name='yenipasswrd'><br><br>
+        Kullanıcı Adı Giriniz:  <input type='text' name='yeniusername'><br><br>
+        Şifre Giriniz:  <input type='password' name='yenipasswrd'><br><br>
         <input type='submit' value='YENİ ÜYE EKLE'>
         </form><br>
         <a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>
