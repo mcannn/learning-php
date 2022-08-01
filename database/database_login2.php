@@ -32,7 +32,12 @@
             echo "<a href='database_login2.php'><input type='submit' value='TEKRAR DENE'></a><br>";
         }else{
             $sorgu = $veritabaniBaglantisi->query("SELECT * FROM uye_listesi",PDO::FETCH_ASSOC);
-            $sayi =$sorgu->rowCount()+1;
+            $sayi = $sorgu->rowCount();
+            if(!$sorgu->rowCount()){
+                $sayi = 0;
+            }else{
+                $sayi = $sayi + 1;
+            }
             $sorgu1=$veritabaniBaglantisi->query("SELECT * FROM uye_listesi WHERE username='$GelenYeniUsername'",PDO::FETCH_ASSOC);
             $sayi1 =$sorgu1->rowCount();
             if($sayi1){
@@ -41,8 +46,9 @@
                 echo "<a href='database_login2.php'><input type='submit' value='TEKRAR DENE'></a><br><br>";
                 echo "<a href='database_login1.php'><input type='submit' value='ÇIKIŞ YAP'></a><br>";
             }else{
-                $ekle = $veritabaniBaglantisi->query("INSERT INTO uye_listesi(id, username, passwrd) 
+                $ekle = $veritabaniBaglantisi->prepare("INSERT INTO uye_listesi(id, username, passwrd) 
                 VALUES('$sayi', '$GelenYeniUsername', '$GelenYeniPasswrd')");
+                $ekle->execute();
                 if($ekle){
                     echo "<h3>Yeni üye başarıyla eklendi.</h3>";
                     echo "<a href='database_login3.php'><input type='submit' value='ÜYE LİSTESİNİ GÖRÜNTÜLE'></a><br><br>";
