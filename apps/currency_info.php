@@ -40,8 +40,12 @@
         echo "<b>EFEKTİF ALIŞ : </b>".$value->BanknoteBuying."<br>";
         echo "<b>EFEKTİF SATIŞ : </b>".$value->BanknoteSelling."<br><br></p>";
         //veritabanına ekle
-        $ekle = $veritabaniBaglantisi->exec("INSERT INTO currency(id, birim_tr, birim_en, alis, satis, efektif_alis, efektif_satis) 
-        VALUES ('$value', '$value->Isim', '$value->CurrencyName', '$value->ForexBuying', '$value->ForexSelling', '$value->BanknoteBuying', '$value->BanknoteSelling')");
+        $sorgu= $veritabaniBaglantisi->query("SELECT * FROM currency WHERE birim_tr='$value->Isim'");
+        $sayi = $sorgu->rowCount();
+        if($sayi==0){
+            $ekle = $veritabaniBaglantisi->exec("INSERT INTO currency(id, birim_tr, birim_en, alis, satis, efektif_alis, efektif_satis) 
+            VALUES ('$value', '$value->Isim', '$value->CurrencyName', '$value->ForexBuying', '$value->ForexSelling', '$value->BanknoteBuying', '$value->BanknoteSelling')");
+        }
     }
     $veritabaniBaglantisi = NULL;
     ?>
