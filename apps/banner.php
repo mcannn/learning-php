@@ -8,13 +8,17 @@
 </head>
 <body>
     <?php
-    try{
-        $veritabaniBaglantisi = new PDO("mysql:host=localhost;dbname=test;charset=UTF8","root","");
-    }catch(PDOException $hata){
-        echo "bağlantıda hata oluştu!<br/>";
-        echo "hata açıklaması: ". $hata -> getMessage();
-        die();
-    }
+        try{
+            $veritabaniBaglantisi = new PDO("mysql:host=localhost;dbname=test;charset=UTF8","root","");
+        }catch(PDOException $hata){
+            echo "bağlantıda hata oluştu!<br/>";
+            echo "hata açıklaması: ". $hata -> getMessage();
+            die();
+        }
+        $reklamSorgusu = $veritabaniBaglantisi->prepare("SELECT * FROM banner");
+        $reklamSorgusu->execute();
+        $reklamSayisi = $reklamSorgusu->rowCount();
+        $reklamkaydi = $reklamSorgusu->fetch(PDO::FETCH_ASSOC);
     ?>
 <table width="1000" align="center" border="0" cellpadding="0" cellspacing="0">
     <tr height="200">
@@ -22,7 +26,10 @@
     </tr>
 </table> 
     <?php
-    $veritabaniBaglantisi = NULL;
+    //gosterim olduğunda sayıyı 1 arttır
+        $reklamguncelle = $veritabaniBaglantisi->prepare("UPDATE banner SET gosterimsayisi=gosterimsayisi+1 WHERE id=?");
+        $reklamguncelle->execute([$reklamkaydi["id"]]);
+        $veritabaniBaglantisi = NULL;
     ?>
 </body>
 </html>
